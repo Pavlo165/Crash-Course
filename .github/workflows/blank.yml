@@ -1,0 +1,14 @@
+name: Print My Name
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  print_name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print My Name
+        run: echo "Pavlo Mochurad)"
